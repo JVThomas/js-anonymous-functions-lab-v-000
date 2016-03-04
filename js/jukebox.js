@@ -13,10 +13,6 @@ $(document).ready(function(){
   var theArtist = artists[Math.floor(Math.random()) * artists.length];
   var songToPlay = jukeboxSongs[theArtist];
 
-  function randomNumber() {
-    return Math.floor(Math.random());
-  }
-
   function menu(){
     $('#menu').on('click', function() {
       $('#menuOptions').html("You can play a song, pause a song, or view all the songs");
